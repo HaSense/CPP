@@ -10,7 +10,8 @@ namespace my {
 
         int x, y;
     };
-
+    
+    //연산자 오버로딩
     std::ostream& operator<<(std::ostream& os, const Point& p) {
         os << "(" << p.x << ", " << p.y << ")";
         return os;
