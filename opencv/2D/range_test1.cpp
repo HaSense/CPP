@@ -4,8 +4,6 @@
 using namespace std;
 using namespace cv;
 
-using namespace std;
-
 int main()
 {
     Range r1(0, 3), r2(3,7);
