@@ -10,3 +10,9 @@ int main()
     
     return 0;
 }
+
+/*
+    컴파일 옵션 :
+    g++ -o run main.cpp sample.cpp
+
+*/
