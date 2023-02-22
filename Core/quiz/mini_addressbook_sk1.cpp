@@ -8,7 +8,7 @@ using namespace std;
 class Person
 {
 public:
-    Person():no(0), name(NULL), phoneNumber(NULL){
+    Person():no(0), name(""), phoneNumber(""){
     }
     Person(int no, string name, string phoneNumber)
         :no(no), name(name), phoneNumber(phoneNumber) {
