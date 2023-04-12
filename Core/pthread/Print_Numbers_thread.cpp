@@ -1,5 +1,5 @@
 #include <iostream>
-#include <pthread.h>
+#include <pthread>
 
 void* PrintNumbers(void* arg) {
     int* max_number = static_cast<int*>(arg);
