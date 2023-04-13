@@ -97,6 +97,22 @@ int main()
 
     testFactory(samsungFactory);
     testFactory(appleFactory);
+    
+    
+ /*  아래는 함수를 따로 만들지 않고 main에서만 테스트 할때 코드 */ 
+//     SamsungFactory samsungFactory;
+//     AppleFactory appleFactory;
+
+//     auto samsungLaptop = samsungFactory.createLaptop();
+//     auto samsungPhone = samsungFactory.createPhone();
+
+//     auto appleLaptop = appleFactory.createLaptop();
+//     auto applePhone = appleFactory.createPhone();
+
+//     samsungLaptop->info();
+//     samsungPhone->info();
+//     appleLaptop->info();
+//     applePhone->info();
 
     return 0;
 }
