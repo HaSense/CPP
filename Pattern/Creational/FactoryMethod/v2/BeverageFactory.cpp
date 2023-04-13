@@ -58,19 +58,22 @@ public:
 
 int main() {
     // Creator 객체를 생성하고 Concrete Product 객체를 생성하는 메소드 호출
-    BeverageFactory* colaFactory = new ColaFactory();
-    Beverage* cola = colaFactory->createBeverage();
-    std::cout << "We have a " << cola->getName() << " for " << cola->getPrice() << " dollars" << std::endl;
-
-    BeverageFactory* fantaFactory = new FantaFactory();
-    Beverage* fanta = fantaFactory->createBeverage();
-    std::cout << "We have a " << fanta->getName() << " for " << fanta->getPrice() << " dollars" << std::endl;
+    BeverageFactory* factory = new ColaFactory();
+    Beverage* beverage = factory->createBeverage();
+    std::cout << "We have a " << beverage->getName() << " for " << beverage->getPrice() << " dollars" << std::endl;
 
     // 메모리 해제
-    delete colaFactory;
-    delete cola;
-    delete fantaFactory;
-    delete fanta;
+    delete factory;
+    delete beverage;
+
+    factory = new FantaFactory();
+    beverage = factory->createBeverage();
+    std::cout << "We have a " << beverage->getName() << " for " << beverage->getPrice() << " dollars" << std::endl;
+
+    // 메모리 해제
+    delete factory;
+    delete beverage;
+
 
     return 0;
 }
