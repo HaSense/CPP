@@ -71,16 +71,17 @@ int main() {
 }
 
 /*
+Instance: 부분은 일부러 적은 것 코드결과랑은 상관이 없다.ㅑ
 
 1. 패턴을 사용하지 않은 경우
-Owner: Alice, Car: Color: Red, Brand: Toyota, Instance: 1
-Owner: Bob, Car: Color: Blue, Brand: Honda, Instance: 2
-Owner: Charlie, Car: Color: Red, Brand: Toyota, Instance: 3
+Owner: Alice, Car: Color: Red, Brand: Toyota                  Instance: 1
+Owner: Bob, Car: Color: Blue, Brand: Honda                    Instance: 2
+Owner: Charlie, Car: Color: Red, Brand: Toyota                Instance: 3
 
 2. 패턴을 적용한 경우
-Owner: Alice, Car: Color: Red, Brand: Toyota, Instance: 1
-Owner: Bob, Car: Color: Blue, Brand: Honda, Instance: 2
-Owner: Charlie, Car: Color: Red, Brand: Toyota, Instance: 1
+Owner: Alice, Car: Color: Red, Brand: Toyota                  Instance: 1
+Owner: Bob, Car: Color: Blue, Brand: Honda                    Instance: 2
+Owner: Charlie, Car: Color: Red, Brand: Toyota                Instance: 1
 
 
 */
