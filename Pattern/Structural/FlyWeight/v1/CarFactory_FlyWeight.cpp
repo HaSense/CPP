@@ -3,7 +3,8 @@
 #include <memory>
 #include <string>
 
-class Car {
+//FlyWeight 클래스
+class Car {         
 public:
     virtual ~Car() = default;
     virtual void printDetails() const = 0;
@@ -20,6 +21,7 @@ public:
     }
 };
 
+//FlyWeight 클래스
 class CarFactory {
     std::map<std::pair<std::string, std::string>, std::shared_ptr<Car>> cars_;
 
@@ -36,6 +38,7 @@ public:
     }
 };
 
+//Context 또는 ConcreateFlyWeight 클래스
 class CarOwnerContext {
     std::shared_ptr<Car> car_;
     std::string owner_;
@@ -48,6 +51,7 @@ public:
     }
 };
 
+//테스트를 위한 메인함수
 int main() {
     CarFactory carFactory;
 
