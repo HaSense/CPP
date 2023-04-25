@@ -9,7 +9,7 @@ public:
     virtual ~Car() = default;
     virtual void printDetails() const = 0;
 };
-
+//ConCrete FlyWeight
 class ConcreteCar : public Car {
     std::string color_;
     std::string brand_;
@@ -21,7 +21,7 @@ public:
     }
 };
 
-//FlyWeight 클래스
+//FlyWeight Factory 클래스
 class CarFactory {
     std::map<std::pair<std::string, std::string>, std::shared_ptr<Car>> cars_;
 
@@ -38,7 +38,7 @@ public:
     }
 };
 
-//Context 또는 ConcreateFlyWeight 클래스
+//Context 클래스
 class CarOwnerContext {
     std::shared_ptr<Car> car_;
     std::string owner_;
