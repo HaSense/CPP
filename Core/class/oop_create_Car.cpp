@@ -21,7 +21,7 @@ private:
 int main()
 {
     //Stack 생성
-    Car myCar(), myCar2(100);
+    Car myCar, myCar2(100);
     cout << myCar2.Speed() << endl;
 
     //Heap 생성
